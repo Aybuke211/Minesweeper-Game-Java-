@@ -58,7 +58,7 @@ public class MayinTarlasi implements MouseListener {
         for (int row = 0; row<board.length; row++){
             for(int col = 0; col<board[0].length; col++){
                 if(board[row][col].isMine()){
-                    board[row][col].setIcon(new ImageIcon("/Users/yuceluzer/Desktop/AYBÜKE/Java Çalışma/MayinTarlasiGui/mine.png"));
+                    board[row][col].setIcon(new ImageIcon("mine.png"));
                 }
                 else{
                     board[row][col].setText(board[row][col].getCount()+""); // burdaki +"" int olan count'u string'e çevirir.
@@ -72,7 +72,7 @@ public class MayinTarlasi implements MouseListener {
 		for (int row = 0; row < board.length; row++) {
 			for (int col = 0; col < board[0].length; col++) {
 				if (board[row][col].isMine()) {
-					board[row][col].setIcon(new ImageIcon("/Users/yuceluzer/Desktop/AYBÜKE/Java Çalışma/MayinTarlasiGui/mine.png"));
+					board[row][col].setIcon(new ImageIcon("mine.png"));
 				}
 			}
 		}
@@ -144,7 +144,7 @@ public class MayinTarlasi implements MouseListener {
         else if(e.getButton() == 3){
             //System.out.println("sağ tık");
             if(!b.isFlag()){
-                b.setIcon(new ImageIcon("/Users/yuceluzer/Desktop/AYBÜKE/Java Çalışma/MayinTarlasiGui/flag.png"));
+                b.setIcon(new ImageIcon("flag.png"));
                 b.setFlag(true); // true yap
             }
             
@@ -174,7 +174,7 @@ public class MayinTarlasi implements MouseListener {
             b.setEnabled(false);
             b.setText(b.getCount()+"");
             if(b.isMine()){
-                b.setIcon(new ImageIcon("/Users/yuceluzer/Desktop/AYBÜKE/Java Çalışma/MayinTarlasiGui/mine.png"));
+                b.setIcon(new ImageIcon("mine.png"));
             }
         }
 
